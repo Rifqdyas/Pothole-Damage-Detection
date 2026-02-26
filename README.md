@@ -1,5 +1,7 @@
 # Pothole-Damage-Detection
-Automated Pothole Damage Detection system built with Python. Features include image data preprocessing, classification modeling, and performance evaluation
+Automated Pothole Damage Detection system built with Python. Features include image data preprocessing, classification modeling, and performance evaluation.
+
+**[Click here to read the Full Project Report Document (PDF)](Dokumen Penjeasan Project.pdf)**
 
 # Pothole Damage Detection using PyTorch
 
@@ -26,6 +28,10 @@ Managing raw datasets is often a major challenge. In this project, directory str
 ### 2. Exploratory Data Analysis (EDA) & Sanity Checks
 Before entering the *training* phase, this project was equipped with *defensive programming* to filter out *hidden files* (such as `.DS_Store` or `thumbs.db`) that could potentially break the *DataLoader*. Random visualization was also performed at this stage to understand the characteristics of the original image resolutions.
 
+<p align="center">
+  <img src="assets/screenshot1.jpg" alt="Sample Dataset - Normal Class" width="600">
+</p>
+
 ### 3. Data Preprocessing & Augmentation
 Image transformations were performed using `torchvision.transforms`:
 * **Resize:** Standardizing all inputs to `224x224` pixel dimensions.
@@ -42,8 +48,30 @@ The model training process ran for **15 Epochs**. The model was trained using:
 * **Loss Function:** `CrossEntropyLoss` (ideal for multi-class/binary classification with *raw logits*).
 * **Optimizer:** `Adam` optimizer with a *learning rate* of `0.001` for fast and stable convergence.
 
+<p align="center">
+  <img src="assets/screenshot3.png" alt="Training Loss and Accuracy Curves" width="800">
+</p>
+
 ### 6. Model Evaluation & Inference
 Evaluation on the *test set* was executed in `model.eval()` and `torch.inference_mode()` to disable gradient tracking. This significantly saves memory usage and speeds up computation. The system is also equipped with a specific function to test entirely new images (outside the dataset) by applying the **Softmax** mathematical function to generate the AI's **Confidence Level percentage**.
+
+---
+
+## Results & Visualizations
+
+To validate the model's performance, here are the evaluation metrics and prediction results on the test dataset:
+
+**1. Confusion Matrix**
+The model effectively distinguishes between normal roads and potholes, as shown in the confusion matrix below.
+<p align="center">
+  <img src="assets/screenshot4.png" alt="Confusion Matrix" width="500">
+</p>
+
+**2. Inference / Prediction Samples**
+Below are examples of the model's predictions comparing the Ground Truth against the AI's Predicted labels. The model correctly identified both the pothole damage and normal road conditions.
+<p align="center">
+  <img src="assets/screenshot2.jpg" alt="Prediction Results" width="800">
+</p>
 
 ---
 
