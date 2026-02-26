@@ -1,7 +1,7 @@
 # Pothole-Damage-Detection
 Automated Pothole Damage Detection system built with Python. Features include image data preprocessing, classification modeling, and performance evaluation.
 
-**[Click here to read the Full Project Report Document (PDF)](Dokumen_Penjelasan_Project.pdf)**
+**[Click here to read the Full Project Report Document (PDF)](Dokumen%20Penjelasan%20Project.pdf)**
 
 # Pothole Damage Detection using PyTorch
 
@@ -64,7 +64,7 @@ To validate the model's performance, here are the evaluation metrics and predict
 **1. Confusion Matrix**
 The model effectively distinguishes between normal roads and potholes, as shown in the confusion matrix below.
 <p align="center">
-  <img src="assets/screenshot4.png" alt="Confusion Matrix" width="500">
+  <img src="asset/screenshot4.png" alt="Confusion Matrix" width="500">
 </p>
 
 **2. Inference / Prediction Samples**
