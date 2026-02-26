@@ -29,7 +29,7 @@ Managing raw datasets is often a major challenge. In this project, directory str
 Before entering the *training* phase, this project was equipped with *defensive programming* to filter out *hidden files* (such as `.DS_Store` or `thumbs.db`) that could potentially break the *DataLoader*. Random visualization was also performed at this stage to understand the characteristics of the original image resolutions.
 
 <p align="center">
-  <img src="asset/screenshot1.jpg" alt="Sample Dataset - Normal Class" width="600">
+  <img src="asset/screenshot1.png" alt="Sample Dataset - Normal Class" width="600">
 </p>
 
 ### 3. Data Preprocessing & Augmentation
@@ -70,7 +70,7 @@ The model effectively distinguishes between normal roads and potholes, as shown 
 **2. Inference / Prediction Samples**
 Below are examples of the model's predictions comparing the Ground Truth against the AI's Predicted labels. The model correctly identified both the pothole damage and normal road conditions.
 <p align="center">
-  <img src="asset/screenshot2.jpg" alt="Prediction Results" width="800">
+  <img src="asset/screenshot2.png" alt="Prediction Results" width="800">
 </p>
 
 ---
