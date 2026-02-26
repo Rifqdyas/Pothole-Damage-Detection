@@ -1,7 +1,7 @@
 # Pothole-Damage-Detection
 Automated Pothole Damage Detection system built with Python. Features include image data preprocessing, classification modeling, and performance evaluation.
 
-**[Click here to read the Full Project Report Document (PDF)](Dokumen Penjeasan Project.pdf)**
+**[Click here to read the Full Project Report Document (PDF)](Dokumen_Penjelasan_Project.pdf)**
 
 # Pothole Damage Detection using PyTorch
 
