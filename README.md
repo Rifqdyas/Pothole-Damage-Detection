@@ -78,5 +78,5 @@ Below are examples of the model's predictions comparing the Ground Truth against
 ## How to Run
 1. Clone this repository to your local directory.
 2. Open the `pothole_detection.ipynb` notebook using Google Colab or Jupyter Notebook.
-3. Download `dataset_sampel.zip` and `dataset_baru.zip`, and upload them to Google Drive or directly to your local Colab system.
+3. Download `dataset_sampel.zip` and `dataset_baru.zip` (in the dataset folder), and upload them to Google Drive or directly to your local Colab system.
 4. Adjust the directory path variables in the ZIP extraction cell according to your dataset's location.
